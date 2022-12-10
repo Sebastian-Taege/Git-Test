@@ -1,2 +1,5 @@
 You always need to commit changes
-git commit -a -m Adding a message
+git clone https://git-lab/beispiel.de % Kopiere Link von Git-Hub bzw. Git-Lab
+git commit -a -m "Kommentar zum commit" % -a -> all -m ->message Nachricht muss in Gänsefüchßen stehen
+git status % Zeigt den Git Status an 
+
