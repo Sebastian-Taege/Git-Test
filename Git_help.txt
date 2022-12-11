@@ -10,4 +10,5 @@ git init % wandle den aktuellen Ordner (current directory) in ein Git repository
 git add text.txt % Füge dem Git repository die Datei text.txt hinzu;
 git add . % Füge alle Dateien des akutellen Ordners dem repositiory hinzu
 git remote add origin www.repository-from-Git-Hub
+git pull origin % Zieht die neuste Version des Servers in den lokalen Ordner
  
