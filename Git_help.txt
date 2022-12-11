@@ -3,7 +3,7 @@ git clone https://git-lab/beispiel.de % Kopiere den Link von Git-Hub bzw. Git-La
 git commit -a -m "Kommentar zum commit" % -a -> all -m ->message Nachricht muss in Gänsefüchßen stehen
 git commit 
 git status % Zeigt den Status der Dateien im aktuellen Ordner an d.h. sind sie comitted lokoal oder comitted und pushed (lokal und auf dem Server)
-git loc % Zeigt die Historie der Datei, Zusatz -2 zeigt die zwei letzten commits
+git log % Zeigt die Historie der Datei, Zusatz -2 zeigt die zwei letzten commits
 git remote % Zeigt die möglichen remotes an auf die gepushed werden kann; Zusatz: -v zeigt die tatsächlichen 
 git push origin main % pushed zurück zu origin (Git Hub) in den branch main; main wird nur beispielhaft verwendet 
 git init % wandle den aktuellen Ordner (current directory) in ein Git repository um
@@ -11,4 +11,10 @@ git add text.txt % Füge dem Git repository die Datei text.txt hinzu;
 git add . % Füge alle Dateien des akutellen Ordners dem repositiory hinzu
 git remote add origin www.repository-from-Git-Hub
 git pull origin % Zieht die neuste Version des Servers in den lokalen Ordner
- 
+git branch NeuerBranch % erzeuge einen den neuen branch mit dem namen NeuerBranch
+git branch --list % zeigt alle branches an
+git checkout NeuerBranch % wechsle den branch zu NeuerBranch, Alternativ: git switch NeuerBranch
+git checkout -b NeuerBranch2 % erzeuge den neuen Branch "NeuerBranch2" und wechsle zu ihm
+git push --set-upstream origin NeuerBranch2 % erzeuge im Repository (online) den BranchNeuerBranch2 und push die Änderung dorthin 
+git merge NeuerBranch % Wichtig: aktueller Branch muss main sein; Die Änderungen in NeuerBranch werden in main übernommen  
+git checkout commit-hash % wechsle zu dem commit mit dem beigefügten commit; mit log lassen sich die alten commits mit zugehörigem hash anzeigen
