@@ -17,4 +17,4 @@ git checkout NeuerBranch % wechsle den branch zu NeuerBranch, Alternativ: git sw
 git checkout -b NeuerBranch2 % erzeuge den neuen Branch "NeuerBranch2" und wechsle zu ihm
 git push --set-upstream origin NeuerBranch2 % erzeuge im Repository (online) den BranchNeuerBranch2 und push die Änderung dorthin 
 git merge NeuerBranch % Wichtig: aktueller Branch muss main sein; Die Änderungen in NeuerBranch werden in main übernommen  
-git checkout commit-hash % wechsle zu dem commit mit dem beigefügten commit; mit log lassen sich die alten commits mit zugehörigem hash anzeigen
+git checkout commit-hash % wechsle zu dem commit mit dem beigefügten commit-hash; mit log lassen sich die alten commits mit zugehörigem hash anzeigen
